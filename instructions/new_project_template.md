@@ -10,7 +10,7 @@ Each Llyod lab project must follow the standardized directory structure and incl
 Projects should be stored in the Llyod lab RDS in the relevant users folder name.
 
 Example path:
-`RDS/usrs/YourName/Project_YYYYMM_ShortName/001_EXPERIMENT_NAME/`
+`RDS/USERS/YourName/Project_YYYYMM_ShortName/001_EXPERIMENT_NAME/`
 
 1. [ ] Create folder: `Project_YYYYMM_ShortName` when starting a new project
 2. [ ] Copy template README.md from `/99_DOCUMENTATION/Templates/` (ADD LINK)

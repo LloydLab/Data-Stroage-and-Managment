@@ -5,35 +5,39 @@
 ```
 /RDS_Lab_Storage/
 │
-├── 00_ACTIVE_PROJECTS/          # Current work (<6 months)
-│   └── Project_YYYYMM_Name/
-│       ├── README.md            # REQUIRED
-│       ├── metadata.yaml        # REQUIRED
-│       ├── 01_raw_data/
-│       │   ├── imaging/
-│       │   ├── imc/
-│       │   ├── scrnaseq/
-│       │   └── spatial/
-│       ├── 02_processed/
-│       ├── 03_analysis/
-│       ├── 04_figures/
-│       └── 05_manuscript/
+├── USERS/
+│   └── YourName/
+│       └── Project_YYYYMM_ShortName/
+│           ├── 001_EXPERIMENT_NAME/
+│           │   ├── README.md            # REQUIRED – overview of this specific experiment
+│           │   ├── metadata.yaml        # REQUIRED – structured metadata for reproducibility
+│           │   ├── 01_raw_data/
+│           │   │   ├── imaging/
+│           │   │   ├── imc/
+│           │   │   ├── scrnaseq/
+│           │   │   └── spatial/
+│           │   ├── 02_processed/
+│           │   ├── 03_analysis/
+│           │   ├── 04_figures/
+│           │   └── 05_manuscript/
+│           │
+│           ├── 002_EXPERIMENT_NAME2/    # Additional experiments follow same structure
+│           └── project_overview.md      # Optional – summary or coordination notes
 │
-├── 01_ARCHIVED_PROJECTS/        # Completed (>6 months)
-│   └── [Same structure]
+├── 01_ARCHIVED_PROJECTS/                # Completed (>6 months old)
+│   └── [Same structure as USERS/YourName/Project...]
 │
-├── 02_SHARED_DATASETS/          # Reference data
-│   ├── Public_scRNAseq/
-│   └── Reference_Genomes/
+├── 02_SHARED_DATASETS/                  # Shared or large datasets
+│   ├── scRNAseq/
+│   └── IMC/
 │
-├── 03_ANALYSIS_PIPELINES/       # Reusable code
+├── 03_ANALYSIS_PIPELINES/               # Cloned Github repo and validated analysis code
 │   ├── imaging_pipeline/
 │   ├── imc_pipeline/
 │   └── scrna_pipeline/
+│          
 │
-├── 04_ARCHIVE_READY/            # Staging for external archival
-│
-└── 99_DOCUMENTATION/            # Templates & guides
+└── 99_DOCUMENTATION/                    # Templates, SOPs, and guides
     ├── Templates/
     └── Protocols/
 ```
@@ -97,7 +101,10 @@ YYYYMMDD_DataType_Sample_Condition.extension
 
 ### Enforcement Mechanisms
 
+*BALAZS: Is this realistic to expect lab members to do this every month? How can we adapt to make it easier? Automate at all?*
+
 **Automated weekly check (Mondays):**
+
 ```bash
 # Check all projects have required files
 find /RDS/00_ACTIVE_PROJECTS -type d -maxdepth 1 | while read project; do
@@ -116,6 +123,7 @@ mail -s "Weekly Organization Compliance Report" data-steward@uni.edu < /var/log/
 ```
 
 **Manual enforcement:**
+
 - Projects in `/NEEDS_ORGANIZATION/` cannot be worked on
 - Must add missing files to restore access
 - Data Steward reviews and approves restoration
