@@ -1,5 +1,7 @@
 ## 🔧 AUTOMATION TOOLS
 
+# Balazs, is this something we need and should use? Is it even realistic to expect lab members to use these tools?
+
 ### Tool 1: Storage Monitor (Prevent crises)
 
 **Purpose:** Alert before running out of space
