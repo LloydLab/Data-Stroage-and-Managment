@@ -42,26 +42,26 @@
 
 ---
 
-## 🚨 WEEK 1 IMPLEMENTATION CHECKLIST
+## 🚨 IMPLEMENTATION CHECKLIST
 
-### Day 1-2: Assessment & Quick Wins
+### Assessment & Quick Wins
 - [ ] Run storage audit (identify space hogs)
 - [ ] Audit external hard drive for backup space
 - [ ] Identify 3-5 completed projects (or personel) to archive
 - [ ] List all imaging data >1 year old
 
-### Day 3-4: Space Recovery
+### Space Recovery
 - [ ] Compress 5 largest old imaging datasets
 - [ ] Move completed projects to archive staging
 - [ ] Delete temporary analysis files from all projects
 
-### Day 5: Backup Setup
+### Backup Setup
 - [ ] Connect external HDD
 - [ ] Install backup automation scripts
 - [ ] Run first full backup
 - [ ] Verify backup integrity
 
-### Day 6-7: Organization Rollout
+### Organization Rollout
 - [ ] Create directory template on RDS
 - [ ] Generate README and metadata templates
 - [ ] Print and post quick-reference cards
@@ -69,14 +69,13 @@
 
 ---
 
-## 💾 SOLUTION 1: IMMEDIATE SPACE RECOVERY
-
-### Target: Free Up 600-800GB in 2 Weeks
+## 💾 SOLUTION 1: SPACE RECOVERY
 
 #### Action 1: Compress Old Imaging Data (Expected: 300-500GB recovery)
 
 **What to compress:**
-- All microscopy images older than 6 months
+- All microscopy images older than 1 year
+- All folders from past personel
 - IMC data from completed experiments
 - Any TIFF files not currently being analyzed
 
@@ -85,13 +84,13 @@
 # Quick compression of TIFF files
 find /path/to/imaging -name "*.tif" -mtime +180 -exec python compress_image.py {} \;
 ```
+`compress_image.py` located in ADD/PATH/TO/FILE
 
 **Expected results:**
 - 30-50% size reduction with lossless compression
-- For 1TB of old imaging → 300-500GB recovered
 - No quality loss, maintains all metadata
 
-#### Action 2: Archive Completed Projects (Expected: 200-300GB recovery)
+#### Action 2: Archive Completed Projects
 
 **What to archive:**
 - Published papers (raw data already deposited in public repos)
@@ -99,9 +98,8 @@ find /path/to/imaging -name "*.tif" -mtime +180 -exec python compress_image.py {
 - Superseded preliminary data
 
 **Where to archive:**
-- External 4TB HDD ($100, attached to lab computer)
+- External hard drive
 - Institutional archive service (check if available)
-- AWS Glacier ($4/TB/month for long-term storage)
 
 **Archive process:**
 1. Copy to external storage (with checksum verification)
@@ -142,9 +140,9 @@ find /path/to/RDS -name ".ipynb_checkpoints" -type d -exec du -sh {} \;
 
 ### Storage Optimization by Data Type
 
-#### Imaging Data (Your Biggest Challenge)
+#### Imaging Data
 
-**Problem:** Generates most data weekly, quickly fills storage
+**Problem:** Generates most data biweekly, quickly fills storage
 
 **Solutions:**
 1. **Immediate compression** (30-50% reduction)
@@ -171,27 +169,19 @@ find /path/to/RDS -name ".ipynb_checkpoints" -type d -exec du -sh {} \;
 2. Delete extracted TIFFs after analysis complete
 3. Compress MCD files in HDF5 format (30% reduction)
 
-**Expected space savings:** 25-35%
-
-#### scRNA-seq (75GB total, 4 datasets)
-
-**Problem:** Actually well-sized for RDS
+#### scRNA-seq
 
 **Solutions:**
 1. Archive raw FASTQ files to external storage
 2. Keep only processed count matrices on RDS
 3. Use Parquet format for count matrices (50-70% reduction)
+   
 
-**Expected space savings:** 30-40GB if FASTQ files archived
-
-#### Spatial Transcriptomics (75GB, 4 datasets)
+#### Spatial Transcriptomics
 
 **Solutions:**
-1. Delete Spaceranger temporary files
-2. Keep only final count matrices + spatial coordinates
-3. Use sparse matrix format (60-80% reduction)
-
-**Expected space savings:** 20-30GB
+1. Keep original files off Xenium machine
+2. Keep compressed back up 
 
 ---
 
@@ -201,28 +191,17 @@ find /path/to/RDS -name ".ipynb_checkpoints" -type d -exec du -sh {} \;
 
 **3 copies of data:**
 - 1 primary (RDS)
-- 2 backups (external HDD + cloud)
+- 2 backups (external HDD + OneDrive)
 
 **2 different media types:**
 - RDS (RAID storage)
-- External HDD (different technology)
-- Cloud (geographically separated)
+- External hard drive (geographically separated)
+- OneDrive (different technology) 
 
 **1 offsite copy:**
-- Cloud storage or
-- External HDD at PI's home/office
+- External HDD at PI's office
 
 ### Recommended Setup for Your Lab
-
-**Budget Option ($280 + $50/month):**
-```
-Primary: 2TB RDS (existing)
-Backup 1: 4TB External HDD USB 3.0 - $100
-Backup 2: 2TB External HDD (rotation) - $80  
-Cloud: Backblaze B2 (1TB critical data) - $50/month
-
-Total: $280 one-time + $600/year
-```
 
 **What gets backed up where:**
 
