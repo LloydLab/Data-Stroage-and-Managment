@@ -107,3 +107,28 @@
 ---
 
 *This plan is a living document. Please provide feedback and suggestions for improvement to the Data Steward.*
+
+---
+
+## Publishing the instructions website
+
+This repository is configured to publish the Markdown files under `instructions/` as a website using MkDocs.
+
+How to enable GitHub Pages the first time:
+
+1. Push your changes to the `main` branch on GitHub.
+2. In your GitHub repository, go to Settings → Pages.
+3. Under "Build and deployment", set Source to "GitHub Actions". Save.
+4. A workflow named "Deploy MkDocs site to GitHub Pages" will run on each push to `main`.
+5. When it finishes, your site will be available at `https://<your-org-or-user>.github.io/<repo-name>/`.
+
+Local preview (optional):
+
+```bash
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+mkdocs serve
+```
+
+Then open the local link shown (usually `http://127.0.0.1:8000`).

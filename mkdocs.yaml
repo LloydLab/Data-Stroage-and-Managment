@@ -1,0 +1,68 @@
+site_name: Lloyd-Data-Structure-and-Management
+repo_url: https://github.com/ImperialCollegeLondon/NHLI-Lloyd-Data-Structure-and-Management
+repo_name: Data-Structure-and-Management
+
+## Please change the above name and link to point to your exemplar
+## Please do not change the theme or most other options below
+
+edit_uri: tree/main/docs/
+
+docs_dir: instructions
+
+nav:
+  - Home: index.md
+  - Action plan: action_plan.md
+  - Automation tools: automation_tools.md
+  - Backups: backups.md
+  - Key challenges: key_challenges.md
+  - New project template: new_project_template.md
+  - Project structure: project_structure.md
+  - Storage by data type: storage_by_data_type.md
+
+theme:
+  name: material
+  logo: assets/iclogo.png
+  favicon: assets/favicon.ico
+  font:
+    text: Roboto
+    code: Roboto Mono
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to dark mode
+    - scheme: slate
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to light mode
+
+  # SPA behaviour
+  features:
+    - navigation.instant
+    - navigation.top
+    - toc.follow
+    - content.code.annotate
+
+# Add here all the plugins you want to use.
+# Don't forget to add them in requirements.txt as well.
+plugins:
+  - tags
+  - search
+  - include-markdown # https://github.com/mondeja/mkdocs-include-markdown-plugin
+  - mkdocs-jupyter
+  - exclude:
+      glob:
+        - LICENSE.md
+
+# Set settings for markdown extensions
+markdown_extensions:
+  - meta
+  - pymdownx.highlight:
+      anchor_linenums: false
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.arithmatex:
+      generic: true
