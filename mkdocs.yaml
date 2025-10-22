@@ -11,13 +11,13 @@ docs_dir: instructions
 
 nav:
   - Home: index.md
+  - Project structure: project_structure.md
+  - New project template: new_project_template.md
+  - Backups: backups.md
+  - Storage by data type: storage_by_data_type.md
+  - Key challenges: key_challenges.md
   - Action plan: action_plan.md
   - Automation tools: automation_tools.md
-  - Backups: backups.md
-  - Key challenges: key_challenges.md
-  - New project template: new_project_template.md
-  - Project structure: project_structure.md
-  - Storage by data type: storage_by_data_type.md
 
 theme:
   name: material

@@ -3,46 +3,49 @@
 ### Mandatory Directory Structure
 
 ```
-/RDS_Lab_Storage/
+/RDS_Lab_Storage/ # General lab RDS storage
 │
 ├── USERS/
 │   └── YourName/
-│       └── Project_YYYYMM_ShortName/
+│       └── Project_YYYYMM_ShortName/    # Active projects, use when relevant
+│           ├── project_overview.md      # REQUIRED – summary of project goals, collaborators, dates
 │           ├── 001_EXPERIMENT_NAME/
 │           │   ├── README.md            # REQUIRED – overview of this specific experiment
 │           │   ├── metadata.yaml        # REQUIRED – structured metadata for reproducibility
 │           │   ├── 01_raw_data/
-│           │   │   ├── imaging/
-│           │   │   ├── imc/
-│           │   │   ├── scrnaseq/
-│           │   │   └── spatial/
+│           │   │   ├── ELISA/
+│           │   │   ├── PCR/
+│           │   │   └── Viability/
 │           │   ├── 02_processed/
 │           │   ├── 03_analysis/
 │           │   ├── 04_figures/
-│           │   └── 05_manuscript/
+│           │   └── 05_other/
 │           │
-│           ├── 002_EXPERIMENT_NAME2/    # Additional experiments follow same structure
-│           └── project_overview.md      # Optional – summary or coordination notes
+│           └── 002_EXPERIMENT_NAME2/    # Additional experiments follow same structure
 │
-├── 01_ARCHIVED_PROJECTS/                # Completed (>6 months old)
-│   └── [Same structure as USERS/YourName/Project...]
 │
-├── 02_SHARED_DATASETS/                  # Shared or large datasets
+├── 01_SHARED_DATASETS/                  # Shared or large datasets
+│   ├── flow_cytometry/
 │   ├── scRNAseq/
+│   ├── spatial_transcriptomics/
 │   └── IMC/
 │
-├── 03_ANALYSIS_PIPELINES/               # Cloned Github repo and validated analysis code
+├── 02_ANALYSIS_PIPELINES/               # Cloned Github repo and validated analysis code for finalized pipelines
 │   ├── imaging_pipeline/
 │   ├── imc_pipeline/
 │   └── scrna_pipeline/
 │          
 │
-└── 99_DOCUMENTATION/                    # Templates, SOPs, and guides
+└── 03_DOCUMENTATION/                    # Templates, SOPs, and guides
     ├── Templates/
-    └── Protocols/
+    └── SOP_Protocols/
 ```
 
 ### File Naming Convention (Mandatory)
+
+Naming files consistently is crucial for easy identification, retrieval, and organization. Do not use spaces, special characters or change capalization strategy in the file names.
+
+Follow this convention for all files:
 
 **Format:**
 ```
