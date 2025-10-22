@@ -22,6 +22,8 @@ Proper data management is crucial for several reasons:
 
 If you are not storing and managing data properly, **you risk losing valuable research data**, facing difficulties in reproducing experiments, and hindering collaboration within the lab.
 
+For example, if you have saved your data only to OneDrive, the lab will loose access to it when you leave. Although there are some work arounds to prevent this loss, it is much better to store data using the lab's shared storage strategy from the beginning.
+
 ##  Getting started
 
 Start with any page from the menu at the top. Suggested starting points:
