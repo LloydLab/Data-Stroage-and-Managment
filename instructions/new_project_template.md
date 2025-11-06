@@ -12,6 +12,7 @@ Projects should be stored in the Llyod lab RDS in the relevant users folder name
 Example path:
 `RDS/USERS/YourName/Project_YYYYMM_ShortName/001_EXPERIMENT_NAME/`
 
+0. [ ] Give project a short, descriptive name (no spaces) - every project must have a unique name
 1. [ ] Create folder: `Project_YYYYMM_ShortName` when starting a new project
 2. [ ] Copy template README.md from `/99_DOCUMENTATION/Templates/` (ADD LINK)
 3. [ ] Fill in README.md (project title, PI, description, data types)
