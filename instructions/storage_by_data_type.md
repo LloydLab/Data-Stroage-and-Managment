@@ -9,7 +9,7 @@
 1. **Immediate compression** (30-50% reduction)
    - Convert TIFF → OME-TIFF with LZW compression
    - No quality loss, maintains metadata
-   
+ 
 2. **Tiered storage** by age:
    - <3 months: Keep original on RDS (active work)
    - 3-12 months: Compressed OME-TIFF on RDS

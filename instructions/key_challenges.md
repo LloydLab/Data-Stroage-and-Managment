@@ -10,6 +10,7 @@
 4. ✅ Set up automated storage monitoring
 
 ### Challenge 2: **Backup/Redundancy** 💾
+
 **Current state:** No backup strategy  
 **Target:** 3-2-1 backup rule (3 copies, 2 media, 1 offsite)  
 

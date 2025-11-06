@@ -58,7 +58,6 @@ If the RDS system fails or data is corrupted, there are multiple backup location
 2. Restore from external hard drive backup
 3. Restore from OneDrive backup if needed
 
-
 # QUESTIONS FOR CLARE
 
 - What will be the location for general lab RDS back up? 
@@ -70,4 +69,3 @@ If the RDS system fails or data is corrupted, there are multiple backup location
 
 - Any PCR, ELISA, Viability data that should only be stored in the users OneDrive
 - Upon leaving the Llyod lab, users should compress and archieve their experimental data and keep a copy on the RDS (need to decide which project? Might make most sense for Clare to get an RDS like Phil and use that as long term storage for all the lab data) and on the external hard drive.
-

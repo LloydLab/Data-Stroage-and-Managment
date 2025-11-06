@@ -2,6 +2,8 @@
 
 ### Mandatory Directory Structure
 
+The Llyod lab needs a space on the RDS the can be continously expanded as needed for memory. This will cost to 
+
 ```
 /RDS_Lab_Storage/ # General lab RDS storage
 │
@@ -48,6 +50,7 @@ Naming files consistently is crucial for easy identification, retrieval, and org
 Follow this convention for all files:
 
 **Format:**
+
 ```
 YYYYMMDD_DataType_Sample_Condition.extension
 ```
