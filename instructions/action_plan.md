@@ -1,6 +1,6 @@
-## 💾 SOLUTION 1: SPACE RECOVERY
+# 💾 SOLUTION 1: SPACE RECOVERY
 
-#### Action 1: Compress Old Imaging Data (Expected: 300-500GB recovery)
+## Action 1: Compress Old Imaging Data (Expected: 300-500GB recovery)
 
 **What to compress:**
 
@@ -23,7 +23,7 @@ find /path/to/imaging -name "*.tif" -mtime +180 -exec python compress_image.py {
 - 30-50% size reduction with lossless compression
 - No quality loss, maintains all metadata
 
-#### Action 2: Archive Completed Projects
+## Action 2: Archive Completed Projects
 
 **What to archive:**
 
@@ -43,7 +43,7 @@ find /path/to/imaging -name "*.tif" -mtime +180 -exec python compress_image.py {
 3. Keep compressed copy on RDS for 30 days
 4. Delete from active RDS after verification period
 
-#### Action 3: Remove Redundant Files (Expected: 100-200GB recovery)
+## Action 3: Remove Redundant Files (Expected: 100-200GB recovery)
 
 **Safe to delete:**
 
@@ -66,7 +66,7 @@ find /path/to/RDS -type f -size +100M -atime +180 -ls > large_old_files.txt
 find /path/to/RDS -name ".ipynb_checkpoints" -type d -exec du -sh {} \;
 ```
 
-#### Action 4: Set Up Storage Monitoring (Prevent future crises)
+## Action 4: Set Up Storage Monitoring (Prevent future crises)
 
 **Automated weekly monitoring:**
 
