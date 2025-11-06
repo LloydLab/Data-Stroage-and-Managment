@@ -4,6 +4,7 @@
 **Current state:** 2TB RDS storage, generating large imaging data biweekly  
 
 **Immediate Actions:**
+
 1. ✅ Compress old imaging data (300-500GB recovery)
 2. ✅ Archive completed projects externally (200-300GB recovery)
 3. ✅ Remove redundant processed files (100-200GB recovery)
@@ -15,11 +16,13 @@
 **Target:** 3-2-1 backup rule (3 copies, 2 media, 1 offsite)  
 
 **Immediate Actions:**
+
 1. ✅ Identify key storage locations (OneDrive, RDS personal, RDS projects, external hardrives)
 2. ✅ Create hierarchy of data storage for key datasets (confocal, flow cytometry, IMC, RNAseq, spatial transcriptomics) 
 4. ✅ Create disaster recovery protocol
 
 ### Challenge 3: **Lack of Organization** 📁
+
 **Current state:** Unclear where files should go  
 **Target:** Standardized directory structure with enforcement  
 
