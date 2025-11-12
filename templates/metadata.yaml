@@ -1,0 +1,42 @@
+# Project Metadata
+project_id: "Project_YYYYMM_Name"
+pi_name: "Dr. Name"
+pi_email: "pi@university.edu"
+lead_researcher: "Researcher Name"
+start_date: "YYYY-MM-DD"
+status: "active"  # active, archived, published
+funding_source: "Grant XYZ"
+
+# Data Summary
+data_types:
+  - imaging
+  - imc
+  - scrnaseq
+  - spatial
+
+total_size_gb: 0  # Update periodically (mandatory)
+
+# Raw Data Inventory
+raw_data:
+  - dataset_id: "20240115_Imaging_Experiment1"
+    date_acquired: "2024-01-15"
+    data_type: "imaging"
+    modality: "confocal"
+    sample_type: "mouse_brain"
+    size_gb: 50
+    location: "01_raw_data/imaging/20240115_Experiment1/"
+    notes: "Initial pilot experiment"
+
+# Processing History
+processing_log:
+  - date: "2024-01-20"
+    action: "Segmentation and quantification"
+    software: "CellProfiler 4.2"
+    output: "02_processed/imaging/20240120_segmented/"
+
+# Publications
+publications: []
+
+# Last Updated
+last_updated: "YYYY-MM-DD"
+updated_by: "Name"

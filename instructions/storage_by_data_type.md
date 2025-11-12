@@ -33,13 +33,23 @@
 
 #### scRNA-seq
 
+**Solutions:**
+
 1. Archive raw FASTQ files to external storage
 2. Keep only processed count matrices on RDS
 3. Use Parquet format for count matrices (50-70% reduction)
 
 #### bulk RNA-seq
 
+**Solutions:**
+
+1. Archive raw FASTQ files to external storage
+2. Keep only processed count matrices on RDS
+3. Use Parquet format for count matrices (50-70% reduction)
+
 #### Proteomics
+
+?
 
 #### Spatial Transcriptomics
 

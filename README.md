@@ -97,9 +97,9 @@
 
 ---
 
-**Document Version:** 2.0  
-**Last Updated:** 2025-10-17  
-**Next Review:** 2026-01-17
+**Document Version:** 3.0  
+**Last Updated:** 2025-11-12  
+**Next Review:** 2026-01-12
 
 **Document Owner:** Data Steward  
 **Approved By:** PI

@@ -2,10 +2,11 @@
 
 ### Mandatory Directory Structure
 
-The Llyod lab needs a space on the RDS the can be continously expanded as needed for memory. This will cost to 
+The Llyod lab needs a space on the RDS the can be continously expanded as needed for memory.
+[Here](https://www.imperial.ac.uk/admin-services/ict/self-service/research-support/rcs/service-offering/rds/) are a detailed description about RDS project allocated spaces.
 
 ```
-/RDS_Lab_Storage/ # General lab RDS storage
+/RDS_Lab_Storage/ # General lab RDS storage!
 │
 ├── USERS/
 │   └── YourName/
@@ -42,6 +43,7 @@ The Llyod lab needs a space on the RDS the can be continously expanded as needed
     ├── Templates/
     └── SOP_Protocols/
 ```
+> **IMPORTANT NOTE:** Every raw data needs to be stored in the corresponding subdirectory in the *01_SHARED_DATASETS* folder!!! Everybody will have access to this shared datasets folder, so in this case we can avoid to keep copies of the large, complex raw datafiles in personal directories. 
 
 ### File Naming Convention (Mandatory)
 
@@ -107,26 +109,15 @@ YYYYMMDD_DataType_Sample_Condition.extension
 
 ### Enforcement Mechanisms
 
-*BALAZS: Is this realistic to expect lab members to do this every month? How can we adapt to make it easier? Automate at all?*
+**Automated weekly check (Monday morning):**
 
-**Automated weekly check (Mondays):**
+A Bash script on the RDS automatically runs every Monday at 8:00 AM.  
+It generates a log file that can be reviewed for fixes.  
 
-```bash
-# Check all projects have required files
-find /RDS/00_ACTIVE_PROJECTS -type d -maxdepth 1 | while read project; do
-  if [ ! -f "$project/README.md" ]; then
-    echo "MISSING README: $project" >> /var/log/compliance_issues.txt
-    mv "$project" /RDS/NEEDS_ORGANIZATION/
-  fi
-  if [ ! -f "$project/metadata.yaml" ]; then
-    echo "MISSING METADATA: $project" >> /var/log/compliance_issues.txt
-    mv "$project" /RDS/NEEDS_ORGANIZATION/
-  fi
-done
+> **Note:** The script checks only the **Lloyd Lab general space**.  
+> It does **not** scan personal home folders.
 
-# Email compliance report to Data Steward
-mail -s "Weekly Organization Compliance Report" data-steward@uni.edu < /var/log/compliance_issues.txt
-```
+You can find more details on the [automation_tools](automation_tools.md) page.
 
 **Manual enforcement:**
 

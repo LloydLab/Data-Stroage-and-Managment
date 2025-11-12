@@ -1,0 +1,12 @@
+# QUESTIONS FOR CLARE
+
+- What will be the location for general lab RDS back up? 
+
+- What data do you want backed up prior to personal leaving the lab?
+  - Flow, imaging, IMC, RNAseq, ST, proteomic, metabolomic data?
+  - Any shared datasets used by multiple people?
+  - Is there any additional data that should be stored in back up locations following generation?
+
+- Any PCR, ELISA, Viability data that should only be stored in the users OneDrive
+
+- Upon leaving the Llyod lab, users should compress and archieve their experimental data and keep a copy on the RDS (need to decide which project? Might make most sense for Clare to get an RDS like Phil and use that as long term storage for all the lab data) and on the external hard drive.
