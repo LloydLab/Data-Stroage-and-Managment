@@ -1,4 +1,4 @@
-## BACKUP & REDUNDANCY STRATEGY
+# BACKUP & REDUNDANCY STRATEGY
 
 All research data must be backed up regularly to prevent data loss. This document outlines the lab's backup strategy, including recommended practices, and disaster recovery plans.
 
@@ -8,7 +8,7 @@ It is **critical** that large datasets, especially raw imaging data or omic data
 
 *Note to Clare: This is going to require you to have an RDS account with sufficient storage space for all lab members raw data. All the data will be compressed to maximize the available space.*
 
-### The 3-2-1 Rule (Industry Standard)
+## The 3-2-1 Rule (Industry Standard)
 
 For all precious data, follow the 3-2-1 backup rule:
 
@@ -19,7 +19,7 @@ For all precious data, follow the 3-2-1 backup rule:
 - 1 secondary backup (external hard drive at PI's office) - Optional
 - additional backup (OneDrive, Google Drive, personal laptops) - Optinal
 
-### Backup Tiers
+## Backup Tiers
 
 **What gets backed up where:**
 
@@ -54,13 +54,13 @@ If you are unsure about what tier your data falls into, please reach out to the 
 
 *Question from Sara: Where should mouse data be classified in regards to back ups? Important or low priority?*
 
-### Disaster Recovery Plan
+## Disaster Recovery Plan
 
-**Scenario 1: RDS System Failure**
+### Scenario 1: RDS System Failure
 
 If the RDS system fails or data is corrupted, there are multiple backup locations to restore maintained by ICL RDS team. Reach out to them in case of failure.
 
-**Scenario 2: Accidental Deletion**
+### Scenario 2: Accidental Deletion
 
 1. Check RDS trash/snapshots
 2. Restore from external hard drive backup (if available)

@@ -68,14 +68,14 @@ find /path/to/RDS -name ".ipynb_checkpoints" -type d -exec du -sh {} \;
 
 ## Action 4: Set Up Storage Monitoring (Prevent future crises)
 
-**Automated weekly monitoring:**
+### Automated weekly monitoring
 
 - Check total storage usage
 - Alert when exceeds 80% capacity (warning)
 - Alert when exceeds 90% capacity (critical)
 - Email report to Data Steward and PI
 
-**See storage_monitor.py script provided**
+### See storage_monitor.py script provided
 
 ## GOALS
 
@@ -114,6 +114,7 @@ find /path/to/RDS -name ".ipynb_checkpoints" -type d -exec du -sh {} \;
 - [ ] Automated compression running monthly
 
 **Backup:**
+
 - [ ] 3 successful backup verifications
 - [ ] Disaster recovery plan tested
 - [ ] Offsite rotation established

@@ -3,8 +3,6 @@ title: Welcome to the Lloyd Lab Data Management Instructions
 layout: default
 ---
 
-# Welcome
-
 This site contains practical, plain-language guides for managing and storing research data in the Lloyd Lab.
 
 ## Who should read this?
