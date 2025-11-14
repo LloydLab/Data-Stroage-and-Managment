@@ -6,6 +6,7 @@ lead_researcher: "Researcher Name"
 start_date: "YYYY-MM-DD"
 status: "active"  # active, archived, published
 funding_source: "Grant XYZ"
+lab_notebook_location: "Physical/Online Location"
 
 # Data Summary
 data_types:
