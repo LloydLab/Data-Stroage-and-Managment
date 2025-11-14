@@ -50,6 +50,10 @@ For more information on what needs to be included in a metadata file, see the [P
 - All other data (ELISA, PCR, viability assays, personal results, etc)
 - Mouse study data that is not longitudinal or critical
 
+If you are unsure about what tier your data falls into, please reach out to the PI or Data Steward for guidance.
+
+*Question from Sara: Where should mouse data be classified in regards to back ups? Important or low priority?*
+
 ### Disaster Recovery Plan
 
 **Scenario 1: RDS System Failure**
