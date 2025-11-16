@@ -12,12 +12,13 @@ Example path:
 
 0. [ ] Give project a short, descriptive name (no spaces) - every project must have a unique name
 1. [ ] Create folder: `Project_YYYYMM_ShortName` when starting a new project
-2. [ ] Copy template README.md from the [templates](../templates/README.md) folder
-3. [ ] Fill in README.md (project title, PI, description, data types)
-4. [ ] Copy template metadata.yaml from the [templates](../templates/metadata.yaml) folder
-5. [ ] Fill in metadata.yaml (at minimum: project_id, pi, start_date)
-6. [ ] Create subfolder: `001_EXPERIMENT_NAME` for each experiment within the project
-7. [ ] Create subdirectories in experimen subfolder:
+2. [ ] Create project_overview.md  from the [templates](../templates/README.md) folder
+3. [ ] Create subfolder: `001_EXPERIMENT_NAME` for each experiment within the project
+4. [ ] Copy template README.md from the [templates](../templates/README.md) folder
+5. [ ] Fill in README.md (project title, PI, description, data types)
+6. [ ] Copy template metadata.yaml from the [templates](../templates/metadata.yaml) folder
+7. [ ] Fill in metadata.yaml (at minimum: project_id, pi, start_date)
+8. [ ] Create subdirectories in experimen subfolder:
    - 01_raw_data/ (with data type folders)
    - 02_processed/
    - 03_analysis/
