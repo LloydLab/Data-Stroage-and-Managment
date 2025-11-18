@@ -1,0 +1,118 @@
+# Project Metadata
+project_id: "Project_YYYYMM_MouseStudy"
+pi_name: "Dr. Name"
+pi_email: "pi@university.edu"
+lead_researcher: "Researcher Name"
+start_date: "YYYY-MM-DD"
+status: "active"        # active, archived, published
+funding_source: "Grant / Internal Funding"
+lab_notebook_location: "Physical/Online Location"
+
+# Mouse Experimental Design
+mouse_info:
+  species: "Mus musculus"
+  strain: "B6J / BALB/c / Other"
+  genotype: "WT / transgenic line / knockout"
+  sex: ["male", "female"]        # list all used, or single value
+  age_weeks: "X–Y"
+  weight_grams: "Range or NA"
+  number_of_animals: 0
+
+husbandry:
+  facility: "Animal Facility Name"
+  housing_conditions:
+    light_cycle: "12:12 light-dark / other"
+    temperature_c: "XX"
+    humidity_percent: "XX"
+    enrichment: "Type of enrichment"
+    cage_type: "Type or specification"
+  diet:
+    feed_type: "Standard chow / high-fat / custom diet"
+    water: "Ad libitum / supplemented"
+
+# Experimental Groups
+cohorts:
+  - group_id: "Group1_Control"
+    description: "Vehicle or baseline group"
+    n: 0
+  - group_id: "Group2_Treatment"
+    description: "Treatment condition"
+    n: 0
+
+# Treatment / Dose Information
+treatments:
+  - treatment_id: "Tx1"
+    compound: "Name of compound"
+    dose: "X mg/kg"
+    route: "IP / IV / PO / SC / other"
+    frequency: "Once daily / weekly / schedule"
+    duration: "X days/weeks"
+    notes: "Optional notes"
+
+# Procedure Overview
+procedures:
+  - procedure_id: "Proc1"
+    description: "Imaging / IMC / scRNA-seq prep / surgery / behavior test"
+    date: "YYYY-MM-DD"
+    anesthesia: "Type, dose, route (if applicable)"
+    analgesia: "Type and timing (if applicable)"
+    notes: "Any additional detail"
+
+# Sample Collection
+sample_collection:
+  - sample_id: "Sample_001"
+    tissue: "Brain / spleen / tumor / other"
+    region: "Cortex / hippocampus / etc"
+    method: "Perfusion / dissection / biopsy"
+    date: "YYYY-MM-DD"
+    storage: "-80C / PFA-fixed / cryo"
+    notes: ""
+
+# Data Summary
+data_types:
+  - imaging
+  - imc
+  - scrnaseq
+  - spatial
+
+total_size_gb: 0   # update periodically
+
+# Raw Data Inventory
+raw_data:
+  - dataset_id: "YYYYMMDD_Modality_Experiment"
+    date_acquired: "YYYY-MM-DD"
+    data_type: "imaging / imc / scrnaseq / spatial"
+    modality: "confocal / lightsheet / etc"
+    sample_type: "mouse_brain / mouse_spleen / etc"
+    size_gb: 0
+    location: "01_raw_data/.../"
+    notes: ""
+
+# Processing History
+processing_log:
+  - date: "YYYY-MM-DD"
+    action: "Description of step"
+    software: "Tool and version"
+    parameters: "Optional"
+    output: "02_processed/.../"
+
+# QC / Validation
+qc_summary:
+  - date: "YYYY-MM-DD"
+    check: "What was assessed"
+    outcome: "pass/fail/notes"
+    reviewer: "Name"
+
+# Adverse Events
+adverse_events:
+  - date: "YYYY-MM-DD"
+    animal_id: "Mouse_X"
+    event: "e.g. weight loss >15%, injection site issue"
+    action_taken: "Vet consulted / euthanized / removed from study"
+
+# Publications
+publications: []
+
+# Last Updated
+last_updated: "YYYY-MM-DD"
+updated_by: "Name"

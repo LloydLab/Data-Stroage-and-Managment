@@ -10,7 +10,14 @@
 ## Description
 [2-3 sentences describing research question]
 
-## Data Types
+## Project Aims and Hypotheses
+Hypothesis: [Description]
+1. Aim 1: [Description]
+2. Aim 2: [Description]
+3. Aim 3: [Description]
+
+## Experimental Types
+- [ ] Flow cytometry
 - [ ] Imaging
 - [ ] IMC
 - [ ] scRNA-seq
@@ -21,6 +28,9 @@
 - Processed: `02_processed/`
 - Analysis: `03_analysis/`
 - Figures: `04_figures/`
+
+## Lab book notes location (if applicable)
+Lab book: [Link or location]
 
 ## Data storage location (mandatory)
 - RDS Path: `/RDS/usrs/YourName/Project_YYYYMM_ShortName/`

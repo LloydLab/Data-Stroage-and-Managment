@@ -1,0 +1,136 @@
+# Project Metadata
+project_id: "Project_YYYYMM_SpatialAnalysis"
+pi_name: "Dr. Name"
+pi_email: "pi@university.edu"
+lead_researcher: "Researcher Name"
+start_date: "YYYY-MM-DD"
+status: "active"            # active, archived, published
+funding_source: "Grant XYZ"
+lab_notebook_location: "Physical/Online Location (Git/ELN link recommended)"
+
+# Analysis Overview
+project_scope:
+  goals:
+    - "e.g., Identify spatially variable genes"
+    - "e.g., Integrate imaging + transcriptomics"
+  dataset_origin: "Public / collaborator / consortium / in-house"
+  ethical_or_data_access_constraints: "Access agreements / restrictions / none"
+
+# Computational Environment
+environment:
+  os: "macOS / Linux / cluster environment"
+  hardware:
+    compute: "Local machine / HPC / cloud"
+    memory_gb: "XX"
+    gpu: "Yes/No, type"
+  containerization:
+    used: "conda / mamba / Docker / Singularity / none"
+    env_file: "path/to/env.yml"
+  core_software:
+    - name: "Python"
+      version: "X.X"
+    - name: "R"
+      version: "X.X"
+
+# Data Summary
+data_types:
+  - spatial
+  - imaging
+  - scrnaseq
+  - imc
+
+total_size_gb: 0      # update regularly
+
+# Raw Data Inventory
+raw_data:
+  - dataset_id: "YYYYMMDD_Spatial_Run1"
+    date_acquired: "YYYY-MM-DD"
+    data_type: "spatial"
+    platform: "Visium / Xenium / CosMX / MERFISH / Stereo-seq / etc"
+    source: "Collaborator / GEO / internal archive"
+    sample_metadata_file: "path/to/metadata.csv"
+    size_gb: 0
+    location: "01_raw_data/spatial/YYYYMMDD_Run1/"
+    notes: "Add notes like slide layout, tissue type, etc"
+
+  - dataset_id: "YYYYMMDD_Imaging_Companion"
+    date_acquired: "YYYY-MM-DD"
+    data_type: "imaging"
+    modality: "H&E / IF / whole-slide / confocal"
+    size_gb: 0
+    location: "01_raw_data/imaging/YYYYMMDD/"
+    notes: ""
+
+# Preprocessing Summary
+preprocessing:
+  - step_id: "PP1"
+    description: "FASTQ QC, trimming (if applicable)"
+    tool: "fastp / bcl2fastq / cellranger"
+    version: "X.X"
+    parameters: "Summary of key flags"
+    output: "02_preprocessed/spatial/PP1/"
+    date: "YYYY-MM-DD"
+
+  - step_id: "PP2"
+    description: "Alignment + gene counting / image alignment"
+    tool: "Space Ranger / Xenium Explorer / etc"
+    version: "X.X"
+    output: "02_preprocessed/spatial/PP2/"
+    date: "YYYY-MM-DD"
+
+# Processing / Analysis History
+analysis_log:
+  - date: "YYYY-MM-DD"
+    analysis_step: "e.g., Normalization, spatial clustering"
+    software: "Scanpy / Seurat / Squidpy"
+    version: "X.X"
+    script_or_notebook: "03_analysis/notebooks/step1_normalization.ipynb"
+    parameters: "e.g., n_neighbors=20, resolution=0.6"
+    output: "03_analysis/results/step1_normalization/"
+    notes: ""
+
+  - date: "YYYY-MM-DD"
+    analysis_step: "Integration with scRNA-seq reference"
+    software: "Harmony / Seurat / Tangram / cell2location"
+    version: "X.X"
+    script_or_notebook: "03_analysis/notebooks/integration.ipynb"
+    output: "03_analysis/results/integration/"
+    notes: ""
+
+# Image Processing (Optional)
+image_processing:
+  - date: "YYYY-MM-DD"
+    step: "Segmentation / intensity normalization"
+    software: "CellProfiler / Ilastik / QuPath / Napari plugins"
+    version: "X.X"
+    parameters: ""
+    output: "02_processed/imaging/"
+    notes: ""
+
+# Quality Control Tracking
+qc_log:
+  - date: "YYYY-MM-DD"
+    dataset_id: "Dataset_ID"
+    checks:
+      - "Spot yields"
+      - "UMI/Gene distributions"
+      - "Image alignment quality"
+      - "Doublet estimation"
+    outcome: "pass / fail / needs review"
+    reviewer: "Name"
+
+# File Structure (Optional but helpful)
+directory_structure:
+  raw_data: "01_raw_data/"
+  preprocessed: "02_preprocessed/"
+  analysis: "03_analysis/"
+  results: "04_results/"
+  figures: "05_figures/"
+  documentation: "docs/"
+
+# Publications
+publications: []
+
+# Last Updated
+last_updated: "YYYY-MM-DD"
+updated_by: "Name"
