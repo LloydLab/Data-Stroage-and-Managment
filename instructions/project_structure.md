@@ -49,7 +49,9 @@ The Llyod lab needs a space on the RDS the can be continously expanded as needed
 
 Naming files consistently is crucial for easy identification, retrieval, and organization. Do not use spaces, special characters or change capalization strategy in the file names.
 
-This is only applicable for data generated in-house using low throughput methods (e.g., microscopy images, flow cytometry files, qPCR data, etc.) where file names can be controlled. Do **NOT** change file names for data exported from high-throughput instruments or software (e.g., sequencing data, mass spectrometry data, etc.); keep original filenames in these cases as analysis tools expect specific file names and formats.
+This is only applicable for data generated in-house using low throughput methods (e.g., microscopy images, flow cytometry files, qPCR data, etc.) where file names can be controlled.
+
+Do **NOT** change file names for data exported from high-throughput instruments or software (e.g., sequencing data, image mass spectrometry data, Xenium etc.). Keep original filenames in these cases as analysis tools expect specific file names and formats.
 
 Follow this convention for all files:
 
