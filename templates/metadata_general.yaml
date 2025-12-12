@@ -12,7 +12,7 @@ lab_notebook_location: "Physical/Online Location"
 sample_type: # the physical sample types used in the project and their storage locations
   - tissue
     storage_location:"/data/storage/location/"
-  - cell_line
+  - cells
     storage_location:"/data/storage/location/"
 
 data_types:
