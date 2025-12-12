@@ -9,6 +9,12 @@ funding_source: "Grant XYZ"
 lab_notebook_location: "Physical/Online Location"
 
 # Data Summary
+sample_type: # the physical sample types used in the project and their storage locations
+  - tissue
+    storage_location:"/data/storage/location/"
+  - cell_line
+    storage_location:"/data/storage/location/"
+
 data_types:
   - imaging
   - imc

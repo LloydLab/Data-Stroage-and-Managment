@@ -68,12 +68,19 @@ sample_collection:
     storage: "-80C / PFA-fixed / cryo"
     notes: ""
 
+
 # Data Summary
+sample_type: # the physical sample types used in the project and their storage locations
+  - lung tissue
+    storage_location:"/data/storage/location/"
+  - BAL
+    storage_location:"/data/storage/location/"
+
 data_types:
-  - imaging
-  - imc
-  - scrnaseq
   - spatial
+  - imaging
+  - scrnaseq
+  - imc
 
 total_size_gb: 0   # update periodically
 

@@ -33,6 +33,12 @@ environment:
       version: "X.X"
 
 # Data Summary
+sample_type: # the physical sample types used in the project and their storage locations
+  - tissue
+    storage_location:"/data/storage/location/"
+  - cells
+    storage_location:"/data/storage/location/"
+
 data_types:
   - spatial
   - imaging
