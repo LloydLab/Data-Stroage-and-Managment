@@ -37,4 +37,13 @@ Start with any page from the menu at the top. Suggested starting points:
 
 If you get stuck or something is unclear, please contact the Data Steward listed on the Help page of the main README.
 
-*QUESTION TO CLARE: Who should the Data Steward be? It needs to be someone who will be in the lab long term*
+## Who do I contact for help?
+
+For questions or assistance with data management practices in the Lloyd Lab, contact the Data Steward:
+
+- **Simone Walker** — [s.walker@imperial.ac.uk](mailto:s.walker@imperial.ac.uk)
+
+For technical questions, reach out to:
+
+- **Balazs Bohar** — [b.bohar@imperial.ac.uk](mailto:b.bohar@imperial.ac.uk)
+- **Sara Patti** — [sep22@ic.ac.uk](mailto:sep22@ic.ac.uk)
