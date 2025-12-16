@@ -12,16 +12,17 @@ Example path:
 
 0. [ ] Give project a short, descriptive name (no spaces) - every project must have a unique name
 1. [ ] Create folder: `Project_YYYYMM_ShortName` when starting a new project
-2. [ ] Create project_overview.md  from the [templates]() folder
+2. [ ] Create project_overview.md  from the [templates](https://github.com/LloydLab/Data-Stroage-and-Managment/blob/main/templates/project_overview.md) folder
 3. [ ] Create subfolder: `001_EXPERIMENT_NAME` for each experiment within the project
 4. [ ] Copy template README.md from the [templates](https://github.com/LloydLab/Data-Stroage-and-Managment/blob/main/templates/README.md) folder
 5. [ ] Fill in README.md (project title, PI, description, data types)
 6. [ ] Copy template metadata.yaml from the [templates](https://github.com/LloydLab/Data-Stroage-and-Managment/tree/main/templates) folder
 
-There are several versions of metadata.yaml depending on data types used in the experiment. We have templates for the following formats:
+   There are several versions of metadata.yaml depending on data types used in the experiment. We have templates for the following formats:
+
    - [General](https://github.com/LloydLab/Data-Stroage-and-Managment/blob/main/templates/metadata_general.yaml)
    - [Mouse](https://github.com/LloydLab/Data-Stroage-and-Managment/blob/main/templates/metadata_mouse.yaml)
-   - [Dry lab] (https://github.com/LloydLab/Data-Stroage-and-Managment/blob/main/templates/metadata_dry.yaml)
+   - [Dry lab](https://github.com/LloydLab/Data-Stroage-and-Managment/blob/main/templates/metadata_dry.yaml)
 
 7. [ ] Fill in metadata.yaml (at minimum: project_id, pi, start_date)
 8. [ ] Create subdirectories in experimen subfolder:
