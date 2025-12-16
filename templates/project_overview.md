@@ -1,6 +1,6 @@
-# Experiment: [Title]
+# Project: [Title]
 
-## Experiment Info
+## Project Info
 - **ID:** Project_YYYYMM_Name
 - **PI:** [Name]
 - **Lead:** [Name]
@@ -8,7 +8,7 @@
 - **Status:** Active/Archived/Published
 
 ## Description
-[2-3 sentences describing experiment question]
+[2-3 sentences describing research question]
 
 ## Project Aims and Hypotheses
 Hypothesis: [Description]
@@ -16,15 +16,14 @@ Hypothesis: [Description]
 2. Aim 2: [Description]
 3. Aim 3: [Description]
 
-## Experimental Types:
+## Experimental Types
+- [ ] Flow cytometry
+- [ ] Imaging
+- [ ] IMC
+- [ ] scRNA-seq
+- [ ] Spatial transcriptomics
 
-## Key Files
-- Raw data: `01_raw_data/`
-- Processed: `02_processed/`
-- Analysis: `03_analysis/`
-- Figures: `04_figures/`
-
-## Lab book notes location (mandatory)
+## Lab book notes location (if applicable)
 Lab book: [Link or location]
 
 ## Data storage location (mandatory)
@@ -35,7 +34,7 @@ Lab book: [Link or location]
 - External HDD ID: [Insert ID]
 
 ## Notes
-[Any important notes about this experiment]
+[Any important notes about this project]
 
 ## Publications
 [List any papers from this project]
