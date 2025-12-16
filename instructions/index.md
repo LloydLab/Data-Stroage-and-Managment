@@ -34,7 +34,7 @@ Start with any page from the menu at the top. Suggested starting points:
 - Key challenges: current key challenges we address in the Llyod lab data management system
 - Action plan: how we solve our key challenges over time
 - Automation tools: make data management easier with automation tools
-- Learn about research software computing at Imperial College London at [RSC website](https://www.imperial.ac.uk/research-software-computing/). This includes information on [high performance computing (HPC)](https://icl-rcs-user-guide.readthedocs.io/en/latest/hpc/) and [Research Data Storage(RDS)](https://icl-rcs-user-guide.readthedocs.io/en/latest/rds/).
+- Learn about research software computing at Imperial College London at [RSC website](https://www.imperial.ac.uk/research-software-computing/). This includes information on [high performance computing (HPC)](https://icl-rcs-user-guide.readthedocs.io/en/latest/hpc/) and [Research Data Storage (RDS)](https://icl-rcs-user-guide.readthedocs.io/en/latest/rds/).
 
 If you get stuck or something is unclear, please contact the Data Steward listed on the Help page of the main README.
 
